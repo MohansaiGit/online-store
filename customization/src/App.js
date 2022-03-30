@@ -1,10 +1,10 @@
 import './App.css';
-import Products from './components/Products';
+import CapCustomization from './components/CapCustomization';
 
 function App() {
   return (
     <div className="App">
-      <Products/>
+      <CapCustomization/>
     </div>
   );
 }
