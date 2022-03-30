@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
+import cap1 from './images/caps.jpg'
 
-export class Products extends Component {
+
+class Products extends Component {
   render() {
     return (
-      <div>Products</div>
+      <div>
+        <img src={cap1}/>
+      </div>
     )
   }
 }
