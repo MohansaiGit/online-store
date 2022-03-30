@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col,Image, Divider, Collapse} from 'antd';
 import Style from './Products.module.css';
 import 'antd/dist/antd.css';
+import Cap from './images/white-cap.png' 
 
 const {Panel} = Collapse;
 
@@ -13,7 +14,8 @@ const {Panel} = Collapse;
           <Row gutter={24}>
             <Col span={8}>
               <Image
-                src="https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg"
+              className={Style.image}
+                src={Cap}
               ></Image>
               <Divider type='vertical'/>
             </Col>
