@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import CapCustomization from './components/CapCustomization';
 
 function App() {
   return (
     <div className="App">
-      Hello
+      <CapCustomization/>
     </div>
   );
 }
