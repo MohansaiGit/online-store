@@ -3,14 +3,14 @@ import { Row, Col, Image, Divider, Collapse, Button, Card } from 'antd';
 import Style from './Products.module.css';
 import './styling.css'
 import 'antd/dist/antd.css';
-import Cap from './images/whitecap.jpg';
+import Tshirt from './images/collar-t-shirts.jpg';
 import BCCI_LOGO from './images/BCCI_logo.png';
 import Apple_Logo from './images/Apple_logo.png';
 import Olympic_logo from './images/olympic_logo.webp';
 
 const { Panel } = Collapse;
 
-class CapCustomization extends Component {
+class TshirtCustomization extends Component {
   render() {
     return (
       <div className={Style.maincontainer}>
@@ -20,7 +20,7 @@ class CapCustomization extends Component {
               <Card className={Style.Card}
              cover={ <Image
              className={Style.images}
-                src={Cap}
+                src={Tshirt}
                 preview ={false}
               />}>
               </Card>
@@ -74,4 +74,4 @@ class CapCustomization extends Component {
   }
 }
 
-export default CapCustomization
+export default TshirtCustomization
