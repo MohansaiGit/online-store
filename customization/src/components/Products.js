@@ -26,7 +26,7 @@ class Products extends Component {
   render() {
     return (
       <div className={styles.containermainscreen}>
-        {this.state.isCap ? <CapCustomization/>:<div>  <Row>
+        {this.state.isCap ? <CapCustomization/>:<div><Row>
           <Col span={8}>
             <Card
               hoverable
