@@ -26,7 +26,7 @@ class CapCustomization extends Component {
               </Card>
               <Divider type='vertical' />
             </Col>
-
+            
             <Col span={14}>
               <Collapse className={Style.Collapse1} expandIconPosition = 'right'>
                 <Panel header="Select the color">
