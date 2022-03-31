@@ -19,7 +19,7 @@ const {Panel} = Collapse;
               ></Image>
               <Divider type='vertical'/>
             </Col>
-
+            
             <Col span={14}>
               <Collapse>
               <Panel header = "Select the color"></Panel>
