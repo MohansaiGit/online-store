@@ -1,13 +1,49 @@
 .container{
-    width:600px;
-    margin: 0px auto;
+    width:500px;
+    margin: 50px auto;
     border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 0px 2px 2px #ccc;
-    margin-top: 10px;
-    height:250px;
+    padding: 40px;
+    box-shadow: 0px 0 10px rgba(0,0,0,0.2);
 }
-.image{
-    width:100px;
-    height:200px;
+.images{
+    padding: 10px;
+    width:80px;
+    height:150px;
+}
+.Card{
+    margin-top: 20px;
+    height:150px;
+    box-shadow: 0px 0 10px rgba(0,0,0,0.2);
+}
+
+.Collapse{
+    margin-top:40px;
+}
+.redbutton{
+    border-radius:100%;
+    margin:5px;
+    width:5px;
+    background-color: red;
+    color: red;
+}
+.greenbutton{
+    border-radius:100%;
+    margin:5px;
+    background-color: green;
+    color: green; 
+    width:5px;
+}
+.pinkbutton{
+    border-radius: 100%;
+    margin: 5px;
+    width:5px;
+    background-color: pink;
+    color:pink;
+}
+
+.logo{
+    margin: 10px;
+    border:1px solid #ccc;
+    width: 20px;
+    height: 30px;
 }
