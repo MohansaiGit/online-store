@@ -18,21 +18,21 @@ class CapCustomization extends Component {
           <Row gutter={16}>
             <Col span={8}>
               <Card className={Style.Card}
-             cover={ <Image
-             className={Style.images}
-                src={Cap}
-                preview ={false}
-              />}>
+                cover={<Image
+                  className={Style.images}
+                  src={Cap}
+                  preview={false}
+                />}>
               </Card>
               <Divider type='vertical' />
             </Col>
-            
+
             <Col span={14}>
-              <Collapse className={Style.Collapse1} expandIconPosition = 'right'>
+              <Collapse className={Style.Collapse1} expandIconPosition='right'>
                 <Panel header="Select the color">
                   <Button className={Style.redbutton} >R</Button>
                   <Button className={Style.greenbutton}>G</Button>
-                  <Button className={Style.pinkbutton}>B</Button>
+                  <Button className={Style.pinkbutton}>P</Button>
                 </Panel>
               </Collapse><br></br>
 
@@ -44,23 +44,23 @@ class CapCustomization extends Component {
                     <Image
                       className={Style.logo}
                       src={BCCI_LOGO}
-                      preview ={false}
+                      preview={false}
                     ></Image>
                     <Col>
-                    <Image
-                      className={Style.logo}
-                      src={Apple_Logo}
-                      preview ={false}
-                    ></Image>
+                      <Image
+                        className={Style.logo}
+                        src={Apple_Logo}
+                        preview={false}
+                      ></Image>
                     </Col>
 
                     <Col>
-                    <Image
-                      className={Style.logo}
-                      src={Olympic_logo}
-                      preview ={false}
-                      onClick={() =>{console.log('clicked')}}
-                    ></Image>
+                      <Image
+                        className={Style.logo}
+                        src={Olympic_logo}
+                        preview={false}
+                        onClick={() => { console.log('clicked') }}
+                      ></Image>
                     </Col>
                   </Row>
 

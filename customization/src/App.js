@@ -7,6 +7,7 @@ import TshirtCustomization from './components/TshirtCustomization';
 function App() {
   return (
     <div className="App">
+      {/* <Products/> */}
      {/* <CapCustomization/> */}
      {/* <TshirtCustomization/> */}
      <ShirtsCustomization/>

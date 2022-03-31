@@ -1,44 +1,52 @@
-.ant-collapse{
+.ant-collapse {
   border-radius: 0px;
   border: none;
-  }
-  .ant-collapse > .ant-collapse-item:last-child, .ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header {
-    border-radius: 0 0 2px 2px;
 }
-.ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header {
+
+.ant-collapse>.ant-collapse-item:last-child,
+.ant-collapse>.ant-collapse-item:last-child>.ant-collapse-header {
+  border-radius: 0 0 2px 2px;
+}
+
+.ant-collapse-icon-position-right>.ant-collapse-item>.ant-collapse-header {
   position: relative;
   padding: 9px 10px;
   padding-right: 40px;
-  background-color:rgb(243, 241, 241);
+  background-color: rgb(243, 241, 241);
   font-weight: 500;
 }
-.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow {
   font-size: 7px;
-  }
-
-  .ant-collapse > .ant-collapse-item > .ant-collapse-header{
-    height: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .ant-collapse-content > .ant-collapse-content-box {
-    padding: 8px;
-    margin-bottom: 0px;
 }
-.ant-collapse > .ant-collapse-item:last-child, .ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header {
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header {
+  height: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ant-collapse-content>.ant-collapse-content-box {
+  padding: 8px;
+  margin-bottom: 0px;
+}
+
+.ant-collapse>.ant-collapse-item:last-child,
+.ant-collapse>.ant-collapse-item:last-child>.ant-collapse-header {
   border-radius: 0 0 2px 2px;
-align-items: center;
+  align-items: center;
 }
 
-.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow svg {
+.ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow svg {
   font-size: 9px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header {
-  
+
+.ant-collapse-icon-position-right>.ant-collapse-item>.ant-collapse-header {
+
   padding-right: 40px;
   background-color: rgb(243, 241, 241);
   font-weight: 40;
