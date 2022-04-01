@@ -4,7 +4,6 @@ import Style from './Products.module.css';
 import Tshirts from './TshirtImages';
 import './styling.css'
 import 'antd/dist/antd.css';
-import Tshirt from './images/collar-t-shirts.jpg';
 import BCCI_LOGO from './images/BCCI_logo.png';
 import Apple_Logo from './images/Apple_logo.png';
 import Olympic_logo from './images/olympic_logo.webp';
