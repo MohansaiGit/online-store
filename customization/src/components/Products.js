@@ -23,6 +23,7 @@ class Products extends Component {
       isCap:true
     })
   }
+  
   render() {
     return (
       <div className={styles.containermainscreen}>

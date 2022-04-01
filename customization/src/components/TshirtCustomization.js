@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Image, Divider, Collapse, Button, Card } from 'antd';
 import Style from './Products.module.css';
+import Tshirts from './TshirtImages';
 import './styling.css'
 import 'antd/dist/antd.css';
 import Tshirt from './images/collar-t-shirts.jpg';
@@ -11,24 +12,48 @@ import Olympic_logo from './images/olympic_logo.webp';
 const { Panel } = Collapse;
 
 class TshirtCustomization extends Component {
+    constructor(props) {
+      super(props)
+    
+      this.state = {
+         selectedTshirt : [Tshirts[0]]
+      }
+    }
     render() {
         return (
             <div className={Style.maincontainer}>
                 <div className={Style.container}>
                     <Row gutter={16}>
                         <Col span={8}>
-                            <Card className={Style.Card}
+                            <Card className={Style.CardInTshirtCustomization}
                                 cover={<Image
                                     className={Style.images}
-                                    src={Tshirt}
+                                    src={this.state.selectedTshirt}
                                     preview={false}
                                 />}>
                             </Card>
-                            <Divider type='vertical' />
                         </Col>
 
                         <Col span={14}>
-                            <Collapse className={Style.Collapse1} expandIconPosition='right'>
+                        <Collapse className={Style.Collapse1} expandIconPosition='right'>
+                                <Panel header="Select the color">
+                                    <div className={Style.image}>
+                                    {Tshirts.map((img, index) =>
+                                        <Image
+                                            key={index}
+                                            src={img}
+                                            preview={false}
+                                            alt='image'
+                                            onClick={() => this.setState({
+                                                selectedTshirt: img
+                                            })}
+                                        />
+                                    )}
+                                    </div>
+                                </Panel>
+                            </Collapse><br></br>
+
+                            <Collapse className={Style.Collapse2} expandIconPosition='right'>
                                 <Panel header="Select the color">
                                     <Button className={Style.redbutton} >R</Button>
                                     <Button className={Style.greenbutton}>G</Button>
