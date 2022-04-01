@@ -4,8 +4,6 @@ import Style from './Products.module.css';
 import './styling.css'
 import 'antd/dist/antd.css';
 import Cap from './images/whitecap.jpg';
-import Shirt from './images/white-shirt.webp';
-import Tshirt from './images/collar-t-shirts.jpg';
 import BCCI_LOGO from './images/BCCI_logo.png';
 import Apple_Logo from './images/Apple_logo.png';
 import Olympic_logo from './images/olympic_logo.webp';
@@ -13,10 +11,17 @@ import Olympic_logo from './images/olympic_logo.webp';
 const { Panel } = Collapse;
 
 class CapCustomization extends Component {
+  componentDidMount() {
+    console.log(this.props)
+    if(this.props.type){
+      this.setState({type: this.props.type})
+    }
+  }
   render() {
     return (
         <div className={Style.maincontainer}>
         <div className={Style.container}>
+          <Button onClick={()=>{this.props.goBack()}}>Back</Button>
           <Row gutter={16}>
             <Col span={8}>
               <Card className={Style.Card}
